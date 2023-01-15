@@ -1,6 +1,8 @@
 # Solid-Principles
 
 # S - Single Responsibility
+ * Each class has one and only one responsibility.
+ * AuthenticationService class only responsible for signIn and signOut
  
 data class User(var email: String, var password: String)
 
@@ -9,11 +11,16 @@ class AuthenticationService() {
     fun signIn() {}
     fun signOut() {}
 }
-Each class has one and only one responsibility. AuthenticationService class only responsible for signIn and signOut
+
 
 
 
 # O - Open Closed Principle
+
+ * Open-Closed Principle
+ * Class should be open for Extension(Adding features)
+ * but, Closed for modification
+
 
 ## Example one using Inheritance
 open class Logger {
@@ -44,6 +51,9 @@ class ApiErrors : Errors {
         TODO("Not yet implemented")
     }
 }
+
+ 
+
 
 
 # Reference source:- 
