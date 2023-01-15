@@ -15,13 +15,7 @@ Each class has one and only one responsibility. AuthenticationService class only
 
 # O - Open Closed Principle
 
-/**
- * Open-Closed Principle
- * Class should be open for Extension(Adding features)
- * but, Closed for modification
- */
-
-// Example one using Inheritance
+## Example one using Inheritance
 open class Logger {
     open fun logErrors(err: String) {
         print("error found - $err")
@@ -34,7 +28,7 @@ class CustomLogger : Logger() {
     }
 }
 
-// Example two using Interface
+## Example two using Interface
 interface Errors {
     fun printErrors()
 }
