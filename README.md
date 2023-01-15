@@ -12,7 +12,7 @@ class AuthenticationService() {
     fun signOut() {}
 }
 
-
+---------------------------------------------------------------------
 
 
 # O - Open Closed Principle
@@ -22,7 +22,7 @@ class AuthenticationService() {
  * but, Closed for modification
 
 
-## Example one using Inheritance
+### Example one using Inheritance:-
 open class Logger {
     open fun logErrors(err: String) {
         print("error found - $err")
@@ -35,7 +35,7 @@ class CustomLogger : Logger() {
     }
 }
 
-## Example two using Interface
+### Example two using Interface:-
 interface Errors {
     fun printErrors()
 }
@@ -54,6 +54,7 @@ class ApiErrors : Errors {
 
  
 
+---------------------------------------------------------------------
 
 
 # Reference source:- 
